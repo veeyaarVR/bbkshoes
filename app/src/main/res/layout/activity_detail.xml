@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.activity.DetailActivity">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="16dp"
+      app:cardBackgroundColor="@color/white"
+      app:cardCornerRadius="@dimen/_5sdp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="Location"
+            android:textColor="@color/gray2"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/_5sdp">
+
+          <Button
+              android:id="@+id/btnLocation"
+              style="@style/Widget.AppCompat.Button.Colored"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="end"
+              android:text="Scan">
+
+          </Button>
+
+          <TextView
+              android:id="@+id/locationCode"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="end"
+              android:padding="@dimen/_5sdp"
+              android:text="AB-124"
+              android:textAllCaps="true"
+              android:textColor="@color/gray3"
+              android:visibility="gone">
+
+          </TextView>
+
+        </FrameLayout>
+
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="Entry"
+            android:textColor="@color/gray2"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/_5sdp">
+
+          <Button
+              android:id="@+id/btnEntry"
+              style="@style/Widget.AppCompat.Button.Colored"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="end"
+              android:text="Scan">
+
+          </Button>
+
+          <TextView
+              android:id="@+id/entryCode"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="end"
+              android:padding="@dimen/_5sdp"
+              android:text="AB-124"
+              android:textAllCaps="true"
+              android:textColor="@color/gray3"
+              android:visibility="gone">
+
+          </TextView>
+
+        </FrameLayout>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="Quantity"
+            android:textColor="@color/gray2"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="@dimen/_5sdp">
+
+          <EditText
+              android:id="@+id/edtQuantity"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="end"
+              android:hint="In Number"
+              android:inputType="number">
+
+          </EditText>
+
+        </FrameLayout>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="@dimen/_10sdp"
+          android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:text="Clear">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="#00C853"
+            android:text="Save">
+
+        </Button>
+
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+
+  </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".view.activity.EntryScannerActivity">
+
+
+  <FrameLayout
+      android:id="@+id/fragment_loader"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/control_base"
+      android:layout_weight="7"
+      android:background="#000000">
+
+  </FrameLayout>
+
+  <LinearLayout
+      android:id="@+id/control_base"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_weight="3"
+      android:background="#ffffff"
+      android:orientation="vertical"
+      android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/tv_location_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="Scan Location Code">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_product_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="Scan Product Code">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:text="Enter Quantity">
+
+      </TextView>
+
+      <EditText
+          android:id="@+id/edtQuantity"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:inputType="number"
+          android:lines="1"
+          android:textAlignment="textEnd"
+          android:maxLength="3">
+
+      </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+      <Button
+          android:id="@+id/btn_cancel"
+          style="@style/Widget.AppCompat.Button.Borderless"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_4sdp"
+          android:layout_weight="1"
+          android:text="Cancel">
+
+      </Button>
+
+      <Button
+          android:id="@+id/btn_submit"
+          style="@style/Widget.AppCompat.Button.Colored"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_4sdp"
+          android:layout_weight="1"
+          android:text="Submit">
+
+      </Button>
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+</RelativeLayout>
