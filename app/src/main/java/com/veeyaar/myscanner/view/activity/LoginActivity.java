@@ -44,7 +44,7 @@ public class LoginActivity extends BaseActivity implements LoginPresenter.LoginI
     GSON = new GsonBuilder().setPrettyPrinting().create();
 
     btnSubmit.setOnClickListener(view -> {
-      setUpList();
+      //setUpList();
 
       if (validationCheck()) {
         loginWithCred();
